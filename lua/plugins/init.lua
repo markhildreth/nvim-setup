@@ -1,6 +1,7 @@
 return {
 	{ "nvim-treesitter/nvim-treesitter" },
 	{ "folke/neodev.nvim" },
+	{ "nvimtools/none-ls.nvim" },
 	{
 		"folke/tokyonight.nvim",
 		lazy = false,
