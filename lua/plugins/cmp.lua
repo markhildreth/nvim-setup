@@ -1,6 +1,6 @@
 return {
 	"hrsh7th/nvim-cmp",
-	event = "InsertEnter",
+	event = {"InsertEnter", "CmdlineEnter"},
 	dependencies = {
 		"hrsh7th/cmp-buffer",
 		"hrsh7th/cmp-path",
@@ -9,9 +9,9 @@ return {
 	config = function()
 		local cmp = require("cmp")
 		cmp.setup({
-			-- TODO: What's up here?
 			completeopt = "menu,menuone,preview,noselect",
 			sources = {
+				{ name = "nvim_lsp" },
 				{ name = "buffer" },
 				{ name = "path" },
 			},

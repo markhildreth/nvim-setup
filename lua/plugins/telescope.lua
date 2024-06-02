@@ -7,8 +7,8 @@ return {
 			local telescope = require("telescope")
 			local keymap = vim.keymap
 
-			keymap.set("n", "<leader>sf", "<cmd>Telescope find_files<cr>", { desc="Fuzzy find files in cwd" })
-			keymap.set("n", "<leader>sg", "<cmd>Telescope live_grep<cr>", { desc="Fuzzy find files in cwd" })
+			keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc="Fuzzy find files in cwd" })
+			keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc="Fuzzy find files in cwd" })
 		end
 	},
 }
